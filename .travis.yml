@@ -1,0 +1,11 @@
+language: go
+
+go:
+    - 1.8.x
+env:
+    - GOARCH=amd64
+sudo: false
+
+script: go test ./creational/singleton
+notifications:
+    email: alanrong@gmail.com
