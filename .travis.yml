@@ -6,6 +6,9 @@ env:
     - GOARCH=amd64
 sudo: false
 
-script: go test ./creational/singleton
+script: 
+    - go test ./creational/singleton
+    - go test ./creational/builder
+    - go test ./creational/factory
 notifications:
     email: alanrong@gmail.com
